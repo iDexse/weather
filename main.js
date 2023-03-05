@@ -34,6 +34,7 @@ function changeWeatherUI(){
                 if (temp > 28) {
                     bodyE.style.background = 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(img/hot.jpg) no-repeat center/cover';
                     weather.style.background = 'url(img/hot.jpg) no-repeat center/cover';
+                    time.style.color = '#000';
                 }else if (temp < 20) {
                     bodyE.style.background = 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(img/cold.jpg) no-repeat center/cover';
                     weather.style.background = 'url(img/cold.jpg) no-repeat center/cover';
