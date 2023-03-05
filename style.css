@@ -1,73 +1,85 @@
-:root{
-    --primary-color: #ed9f20;
-    --text-color: #79590e;
-}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 30px;
-}   
-body {
-    display: flex;
-    justify-content: center;
-}
-a{
-    color: #000;
-    font-weight: bold;
-}
-main {
-    margin-top: 1%;
-    width: 75%;
-    border-top: 1px solid #79590e;
-}
-header {
-    margin: 10px 10px 20px 10px;
-    width: 100%;
-}
-h3 {
-    color: var(--text-color);
-    text-transform: uppercase; 
-}
-h4 {
-    text-transform: uppercase;
-}
-header .header{
-    display: flex;
-}
-.header .image{
-    margin-right: 1%;
-}
-.header img{
-    width: 100px;
 }
 
-.header .header-info h4{
-    margin: 5px 0;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.header .header-info h1{
-    color: var(--primary-color);
-    text-transform: uppercase;
+
+.weather {
+    width: 350px;
+    border-radius: 10px;
+    padding: 20px 30px;
 }
-.container{
+
+.search {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 0 15px 0 15px;
+    box-shadow:  0 3px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+    font-size: 19px;
+}
+
+.search:focus{
+    background: rgba(255, 255, 255, 1);
+    border-radius: 15px 0 15px 0;
+}
+
+.content {
+    text-align: center;
+    color: white;
+    margin: 40px 0;
+    cursor: default;
+    transition: 0.3s;
+}
+
+.capital {
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.time {
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.temperature {
+    font-size: 65px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.7);
+}
+
+.desc {
+    font-size: 40px;
+    padding: 20px;
+    font-weight: bold;
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.3);
+}
+.more-desc {
     display: flex;
     justify-content: space-between;
 }
-.container .container-1{
-    margin-left: 20px;
-    width: 400px;
+.more-desc div {
+    display: flex;
+    flex-direction: column;
 }
-.container-1 .study, .container-2 .info {
-    margin-bottom: 20px;
-}
-.container .container-2{
-    margin-right: 20px;
-    width: 400px;
+.more-desc div i {
+    padding: 10px;
 }
 
-.box {
-    width: 100%;
-    height: 50px;
-    background-image: linear-gradient(to bottom right,#ec432d, #fcb000)
+.hide {
+    visibility: hidden;
+    
 }

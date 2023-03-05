@@ -4,67 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 </head>
 <body>
-    <main>
-        <header>
-            <div class="header">
-                <div class="image">
-                    <img src="./img/53661161b6406c1e3551.jpg" alt="ảnh đại diện">
-                </div>
-                <div class="header-info">
-                    <h1>Đoàn Đức Nghĩa</h1>
-                    <h4>FrontEnd Intern</h4>
-                    <p>Mục tiêu hiện tại của em là muốn trở thành lập trình viên Font-End chuyên nghiệp và sau này em có thể sẽ học thêm Back-End để làm Full-Stack.</p>
-                </div>
+    <div class="weather">
+        <input type="text" class="search" placeholder="Write name city...">
+        <div class="content">
+            <h1 class="capital">
+                <span class="city">Ha Noi</span>
+                <span>,</span>
+                <span class="country">VN</span>
+            </h1>
+            <p class="time">12/02/2003</p>
+            <div class="temperature">
+                <span class="value">23 <sup>o</sup>C</span>
             </div>
-        </header>
-        <div class="container">
-            <div class="container-1">
-                <div class="study">
-                    <h3>Học Vấn</h3>
-                    <p>Trường Đại Học Đà Lạt</p>
-                    <p>Ngành Công Nghệ Thông Tin</p>
-                    <p>năm học 2019-2023</p>
-                    <p>GPA: 2.55</p>
+            <div class="desc">Clouds</div>
+            <div class="more-desc">
+                <div class="visibility">
+                    <i class="far fa-eye"></i>
+                    <span>1000(m)</span>
                 </div>
-                <div class="experience">
-                    <h3>Kinh Nghiệm</h3>
-                    <p>Em có làm một số dự án nhóm nhỏ cùng với các môn học ở trường </p>
-                  
-                    <p>Đây là đồ án nhóm 2 người làm game con rắn 2d sử dụng ngôn ngữ python, 
-                        trong đồ án này thì em là người làm phần giao diện của game như thảm cỏ, hình dáng con rắn
-                        và quả táo con rắn ăn.
-                         </p>
-                    <a href="https://github.com/iDexse/GameSnake" target="_blank">đồ án game con rắn làm bằng python</a>
-                    
-                    <p>Đây là web nghe nhạc tự em làm dùng HTML/CSS/JAVASCRIPT thuần:</p>
-                    <a href="https://idexse.github.io/websitenghia/" target="_blank">trang web nghe nhạc</a>
+                <div class="wind">
+                    <i class="fas fa-wind"></i>
+                    <span>1000(m)</span>
                 </div>
-            </div>
-            <div class="container-2">
-                <div class="info">
-                    <h3>Thông tin cá nhân</h3>
-                    <p>Email: 1911172@dlu.edu.vn</p>
-                    <p>Sđt: 0918658262</p> 
-                    <p>Địa chỉ: Tp Đà Lạt, Tỉnh Lâm Đồng</p>
-                    <h4>Tính Cách:</h4>
-                    <p>em là một người hướng nội và trầm tính ạ</p>
-                    <h4>Sở Thích:</h4>
-                    <p>Thích xem phim, đọc sách, chơi game</p>
-                </div>
-                <div class="skill">
-                    <h3>kỹ năng</h3>
-                    <p>HTML/CSS: trình độ trung bình</p>
-                    <p>JAVASCRIPT: trình độ cơ bản</p>
-                    <p>Tiếng Anh: có khả năng đọc hiểu được tài <br/> liệu tiếng anh ở mức cơ bản </p>
-                    <p>Thời điểm hiện tại(14/02/2023) em đang bắt đầu học về ReactJS nên em chưa biết về nhiều ReactJS</p>
+                <div class="sun">
+                    <i class="fas fa-cloud-sun"></i>
+                    <span>1000(m)</span>
                 </div>
             </div>
         </div>
-        <div class="box"></div>
-    </main>
+    </div>
+<script src="main.js"></script>
 </body>
 </html>
